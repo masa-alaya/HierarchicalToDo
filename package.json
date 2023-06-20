@@ -1,5 +1,5 @@
 {
-  "homepage": "http://masa-alaya.github.io/ToDo",
+  "homepage": "http://masa-alaya.github.io/HierarchicalToDo",
   "name": "react-complete-guide",
   "version": "0.1.0",
   "private": true,
@@ -10,7 +10,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.8.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^2.1.3",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
