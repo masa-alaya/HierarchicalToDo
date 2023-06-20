@@ -1,0 +1,58 @@
+.goal-item {
+  position: relative;
+  margin: 1rem 0;
+  background: #8b005d96;
+  box-shadow: 7px 11px 20px 11px rgba(0, 0, 0, 0.33);
+  color: white;
+  padding: 1rem 2rem;
+  animation: scale-fade-in 0.4s ease-in-out;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  border-radius: 7px;
+}
+
+.icon {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  right: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  background-color: #8ec5fc;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: rotate-fade-out 2s infinite;
+  padding: 2px;
+}
+.icon.clicked {
+  background-color: #ee7501;
+}
+.goal-item.clicked {
+  transition: all 0.3s linear;
+  transform: translateX(100%);
+  opacity: 0;
+}
+.goal-item:not(.clicked) {
+  transition: all 0.3s ease-out;
+}
+@keyframes scale-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-fade-out {
+  0% {
+    transform: translateY(-50%) scale(0.9);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.2);
+  }
+  100% {
+    transform: translateY(-50%) scale(0.9);
+  }
+}
